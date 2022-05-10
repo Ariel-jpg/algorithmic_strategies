@@ -20,7 +20,7 @@ public class Algorithms {
         }
         else {
             parcialMatchesWon = (points - numberOfMatches) / 2;
-            boolean l = (parcialMatchesWon % 2 != 0), s = (points - numberOfMatches) >= -1;
+            boolean l = (parcialMatchesWon != 1 && parcialMatchesWon % 2 != 0), s = (points - numberOfMatches) > -1;
 
             if (l && s) {
                 numberOfMatches--;
